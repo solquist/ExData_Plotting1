@@ -45,6 +45,19 @@ two.day[, DateTime := as.POSIXct(paste(Date, Time), format = "%d/%m/%Y %T")]
 #   * Lower right - global reactive power time series
 #
 # and save as Plot4.png that is 480 x 480 (default for "png()").
+#
+# Note: it would be possible to make the PNG background opaque white (default)
+# or transparent as in the source files for the README.md. I chose opaque white
+# as that produces a result that looks like the results of the README.md. Either
+# is okay per the discussion forum
+# (https://class.coursera.org/exdata-007/forum/thread?thread_id=10)
+#
+# Note: slight rendering differences can occur due to OS differences in
+# rendering. This can be noticed as a very slight difference in the color red,
+# for example, very slight variation in text size, slight differences due to
+# different anti-aliasing, etc. Per the discussion forums, these differences
+# are not expected to be accounted for and so I am not trying to adjust for those
+# (https://class.coursera.org/exdata-007/forum/thread?thread_id=41)
 png("Plot4.png", type = "windows")
 
 par(mfrow = c(2, 2))  # 2 x 2 plot
