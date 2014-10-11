@@ -79,7 +79,7 @@ lines(two.day[, DateTime], two.day[, Sub_metering_1], col = "black")
 lines(two.day[, DateTime], two.day[, Sub_metering_2], col = "red")
 lines(two.day[, DateTime], two.day[, Sub_metering_3], col = "blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-       col = c("black", "red", "blue"), lty = 1, bty = "n")
+       col = c("black", "red", "blue"), lty = 1, bty = "n", cex = 0.9)
 
 # Lower right global reactive power time series
 plot(two.day[, DateTime], two.day[, Global_reactive_power], type = "n",
